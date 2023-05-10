@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,400&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+        <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+     <link rel="stylesheet" href="https://kit.fontawesome.com/e38cf69811.css" crossorigin="anonymous">
+
+     <link rel="stylesheet" href="styles.css" />
+         <script src="ai.js" defer></script>
+</head>
+<body>
+    <div class="quiz-container" id="quiz">
+        
+        <h2>Musty Dev Quiz App <i class="fa-solid fa-lightbulb fa-bounce"></i></h2>
+       
+    <div class="timer">
+    <button onclick="window.location.reload()" class="restart">Restart Quiz<i class="fa-solid fa-comment-slash fa-flip"></i></button>
+   <p id="time" class="times"><i class="fa-solid fa-clock fa-flip"></i></p>
+        
+<a href="index.html" class="back">GO Back <i class="fa-solid fa-rotate-left fa-flip"></i></a>
+        </div>
+    <button class="head">Artificial Intelligence <i class="fa-solid fa-microchip fa-fade"></i></button>
+        <div class="quiz-header">
+           <h2 id="question" class="text">Question text</h2>
+            <ul class="option">
+                <li>
+                    <input type="radio"  name="answer" class="answer" id="a">
+                    <label for="a" id="a_text">Question</label>
+                </li>
+                <li>
+                    <input type="radio" id="boxicons" name="answer"  class="answer" id="b">
+                    <label for="b" id="b_text">Question</label>
+                </li>     <li>
+                    <input type="radio" id="c" name="answer"  class="answer" id="c">
+                    <label for="c" id="c_text">Question</label>
+                </li>     <li>
+                    <input type="radio" id="defer" name="answer"  class="answer" id="d">
+                    <label for="d" id="d_text">Question</label>
+                </li>
+            </ul>
+        </div>
+        
+            <button id="submit">Next <i class="fa-solid fa-forward-fast fa-shake"></i> </button>
+        
+        </div>
+    
+</body>
+</html>

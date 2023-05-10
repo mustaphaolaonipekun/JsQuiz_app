@@ -1,0 +1,243 @@
+:root{
+    scroll-behavior: smooth;
+--pink:orange;
+}
+
+*{
+    padding: none;
+    outline: none;
+    margin: none;
+    font-family: "Nunito";
+    box-sizing: border-box;
+   text-decoration: none;
+    }
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: aquamarine;
+    background-image: linear-gradient(315deg, #b8c6);
+    min-height: 100vh;
+    margin: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+ .quiz-container {
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px rgba( 0, 0, 0, 0.1);
+   color: var(--pink);
+   width: 400px;
+   max-width: 100%;
+   animation: hue 2s linear infinite;
+}
+@keyframes hue{
+    50%{
+        filter: drop-shadow(45deg);
+        filter: hue-rotate(360deg);
+    }
+}
+
+ .quiz-header {
+    padding: 4rem;
+ }
+ i{
+   color: #54e23e;
+   font-size: 20px;
+ }
+
+ .quiz-header h2{
+    font-size: 20px;
+    color: var(--pink);
+ }
+ h2{
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+    color: violet;
+    font-size: 25px;
+    animation:   2s rotate ;
+ }
+ @keyframes rotate {
+0%{
+   transform: rotateX(360deg);
+}
+   
+ }
+ .sets{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   width: auto;
+   height: 200px;
+ }
+ .timer{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+  
+ }
+ .restart{
+   width: 100px;
+   height: 50px;
+   color: var(--pink);
+   font-size: 15px;
+   background-color: #fff;
+   border-radius: 4px;
+   border: 2px solid saddlebrown;
+      text-align: center;
+   align-items: center;
+   margin: 5px;
+   padding: 5px;
+   animation:   2s rotz ;
+}
+@keyframes rotz {
+0%{
+  transform: rotateZ(360deg);
+}
+
+ }
+ .times{
+   display: flex;
+   flex-wrap: wrap;
+   color: var(--pink);
+   font-size: 15px;
+   background-color: #fff;
+   border-radius: 4px;
+   border: 2px solid saddlebrown;
+   width: 130px;
+   height: 50px;
+   text-align: center;
+   align-items: center;
+   margin: 5px;
+   padding: 5px;
+   cursor: pointer;   
+ animation:   2s roty ;
+}
+.times:hover{
+   background-color: #732d91;
+}
+@keyframes roty {
+0%{
+  transform: rotateY(360deg);
+}}
+ .back{
+   width: 100px;
+   height: 50px;
+   color: var(--pink);
+   font-size: 15px;
+   background-color: #fff;
+   border-radius: 4px;
+   border: 2px solid saddlebrown;
+   text-align: center;
+   align-items: center;
+   margin: 5px;
+   padding: 5px;
+   animation:   2s rot ;
+}
+.back a{
+margin-top: -420px;
+
+}
+.back:hover{
+   background-color: #732d91;
+}
+@keyframes rot {
+0%{
+  transform: rotate(360deg);
+}
+ }
+ .head {
+   text-align: center;
+    background-color: violet;
+     color: #fff;
+    font-family: inherit;
+    font-size: 2rem;
+   padding: 10px;
+    cursor: pointer;
+  margin-top: 10px;
+ }
+ .head:hover{
+   background-color: #732d91;
+ }
+
+ 
+
+ ul{
+    list-style-type: none; 
+    padding: 0;
+ }
+
+ ul li{
+    margin:1rem 0;
+    font-weight: bold;
+    font-size: 15px;
+ }
+ul li label{
+    cursor: pointer;
+}
+
+ button {
+    display: block;
+    background-color: violet;
+    border: none;
+    color: #fff;
+    display: block;
+    font-family: inherit;
+    font-size: 2rem;
+    width: 100%;
+    padding: 1rem;
+    cursor: pointer;
+ }
+    
+ button:hover {
+    background-color: #732d91;
+ }
+button:focus{
+    background-color: #54e23e;
+    outline: none;
+}
+
+
+.quiz-section{
+   display: flex;
+   flex-wrap: wrap;
+   padding: 10px;
+   margin: 10px;
+   text-align: center;
+   align-items: center;
+   
+}
+.quiz-type{
+font-size: 13px;
+color: var(--pink) ;
+}
+.quiz-type h3{
+   font-size: 16px;
+   align-items: center;
+   text-align: center;
+   padding: 10px;
+   margin: 5px;
+   border: 2px solid;
+   margin-bottom: 20px;
+}
+.quiz-type h4 {
+   border: 3px solid;
+   padding: 8px;
+   margin: 5px;
+   border-radius: 16px;
+   margin-bottom: 20px;
+}
+.quiz-type h4:hover{
+   background-color: #732d91;
+}
+.quiz-type a{
+   margin: 5px;
+}
